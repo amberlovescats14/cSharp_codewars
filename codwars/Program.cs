@@ -19,8 +19,11 @@ namespace codwars
             var multiDemensionArrays = new SumOfMinimums();
             //multiDemensionArrays.getSumOfMinimums(new int[2, 3] { { 1, 2, 3 }, { 3, 4, 5 } });
 
-            var perfectNumbers = new ExtraPerfectNumbers().getExtraPerfectNumbers(3);
-            Console.WriteLine(string.Join(' ', perfectNumbers));
+            //var perfectNumbers = new ExtraPerfectNumbers().getExtraPerfectNumbers(3);
+            //Console.WriteLine(string.Join(' ', perfectNumbers));
+
+            var missingValues = new MissingValues()
+                    .getMissingValues(new int[] { 1, 1, 1, 2, 2, 3 });
 
         }
 
