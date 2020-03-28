@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+
 namespace codwars
 {
     public class Genetic
@@ -12,19 +14,19 @@ namespace codwars
 
         public static string PigIt(string str)
         {
+            List<String> formatedWords = new List<string>();
             var strArray = str.Split(' ');
-            var teest = "Amber".SplitOnEvery();
-            var name = "Amber";
-            var peep = "".Pop(ref name);
-            Console.WriteLine("name: "+name);
-            Console.WriteLine("peep: "+peep);
-            var venkat = "Venkat".ToArray();
-            foreach (var item in venkat)
+            for (int i = 0; i < strArray.Length; i++)
             {
-                Console.WriteLine("item: "+item);
+                StringBuilder builder = new StringBuilder();
+                var firstLetter = strArray[i].Unshift(ref strArray[i]);
+                builder.Append(strArray[i]);
+                builder.Append(firstLetter);
+                builder.Append("ay");
+                formatedWords.Add(builder.ToString());
             }
 
-            return str;
+            return string.Join(" ", formatedWords);
         }
     }
 
@@ -39,12 +41,16 @@ namespace codwars
             }
             return (IEnumerable<string>)stringSeperated; 
         }
-        public static string Pop(this string str, ref string mutate)
+        public static string Unshift(this string str, ref string mutate)
         {
-            var last = mutate[mutate.Length - 1];
-            var newstr = mutate.SplitOnEvery().SkipLast(1);
+            var first = mutate[0];
+            var newstr = mutate.SplitOnEvery().Skip(1);
             mutate = String.Join("", newstr);
-            return last.ToString();
+            return first.ToString();
+        }
+        public static string Unshift(this string str)
+        {
+            return str[str.Length - 1].ToString();
         }
     }
 }

@@ -25,7 +25,8 @@ namespace codwars
             //var missingValues = new MissingValues()
             //        .getMissingValues(new int[] { 1, 1, 1, 2, 2, 3 });
 
-            Genetic.PigIt("Hello world amber");
+            var pig = Genetic.PigIt("Pig Latin");
+            Console.WriteLine(pig);
 
         }
 
