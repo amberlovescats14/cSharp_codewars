@@ -8,7 +8,7 @@ namespace codwars
         {
             Console.WriteLine("Hello World!");
 
-            var ages = new int[] { 10, 50, 30, 40 };
+            //var ages = new int[] { 10, 50, 30, 40 };
             //var oldest = new TwoOldestAges().getAges(ages);
             //Console.WriteLine(string.Join(",",oldest));
 
@@ -22,8 +22,10 @@ namespace codwars
             //var perfectNumbers = new ExtraPerfectNumbers().getExtraPerfectNumbers(3);
             //Console.WriteLine(string.Join(' ', perfectNumbers));
 
-            var missingValues = new MissingValues()
-                    .getMissingValues(new int[] { 1, 1, 1, 2, 2, 3 });
+            //var missingValues = new MissingValues()
+            //        .getMissingValues(new int[] { 1, 1, 1, 2, 2, 3 });
+
+            Genetic.PigIt("Hello world amber");
 
         }
 

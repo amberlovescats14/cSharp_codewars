@@ -29,9 +29,8 @@ namespace codwars
                 }
                 else continue;
             }
-            var reduce = numbersToMultiply.Aggregate((x, y) => x * y);
-            Console.WriteLine("reduce: " + reduce);
-            return 0;
+
+            return numbersToMultiply.Aggregate((x, y) => x * y);
         }
     }
 }
