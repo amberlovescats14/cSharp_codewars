@@ -25,8 +25,12 @@ namespace codwars
             //var missingValues = new MissingValues()
             //        .getMissingValues(new int[] { 1, 1, 1, 2, 2, 3 });
 
-            var pig = Genetic.PigIt("Pig Latin");
-            Console.WriteLine(pig);
+            //var pig = Genetic.PigIt("Pig Latin");
+            //Console.WriteLine(pig);
+
+            var march28 = new leetcode.March28();
+            var matches = march28.TwoSum(new int[] { 2, 7, 11, 15 }, 9);
+            Console.WriteLine(string.Join(",", matches));
 
         }
 
