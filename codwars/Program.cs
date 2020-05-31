@@ -34,6 +34,12 @@ namespace codwars
 
             var march29 = new leetcode.March29();
             march29.LengthOfLongestSubstring("dvdf");
+            //march29.LengthOfLongestSubstring("abcabcbb");
+
+            //var result1 = march29.LengthOfLongestSubstring("abcabcbb");
+            //var result2 = march29.LengthOfLongestSubstring("bbbbbbb");
+            //var result3 = march29.LengthOfLongestSubstring("pwwkew");
+
         }
 
     }
